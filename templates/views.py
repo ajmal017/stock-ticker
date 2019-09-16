@@ -14,7 +14,7 @@ tickering = Blueprint("tickering", __name__)
 @tickering.route("/")
 def index():
     form = TickerForm()
-    return render_template("index ticker.html",
+    return render_template("index.html",
                            site_form=form)
 
 
